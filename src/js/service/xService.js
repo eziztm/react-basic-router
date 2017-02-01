@@ -1,9 +1,9 @@
 function getChats(data) {
 
-    if (data == 'privat') {
+    if (data == 'p') {
         return "";
-    } else if (data == 'bedrift') {
-        return "corpChats";
+    } else if (data == 'b') {
+        return "test";
     } else {
         return [];
     }
