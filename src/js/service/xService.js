@@ -1,14 +1,17 @@
-function getChats(data) {
+function getDate() {
+    var date = new Date();
+    return date.toLocaleDateString(); 
+}
 
-    if (data == 'p') {
-        return "";
-    } else if (data == 'b') {
-        return "test";
-    } else {
-        return [];
+function getPageName(data) {
+    switch (data) {
+        case 1: return "FIRST";
+        case 2: return "SECOND";
+        default: return "MAIN";
     }
 }
 
 module.exports = {
-    getChats
+    getDate,
+    getPageName
 }
